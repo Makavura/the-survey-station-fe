@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-const baseUrl = 'http://localhost:3000'
+const baseUrl = 'https://the-survey-station-cx83r.ondigitalocean.app'
 @Injectable({
   providedIn: 'root'
 })

@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import * as moment from 'moment';
 import { map } from 'rxjs/operators';
 import jwt_decode from "jwt-decode";
-const baseUrl = 'http://localhost:3000'
+const baseUrl = 'https://the-survey-station-cx83r.ondigitalocean.app'
 @Injectable({
   providedIn: 'root'
 })
