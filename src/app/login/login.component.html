@@ -1,0 +1,50 @@
+<div class="container mx-auto px-40 my-40 lg:w-3/4">
+
+    <div class="pb-10 lg:w-2/4 mx-auto">
+        <p class="text-blue-600 text-3xl">The Survey Station</p>
+    </div>
+    <div class="pb-10 lg:w-2/4 mx-auto">
+        Sign in into your administrator account
+    </div>
+
+    <form [formGroup]="form" class="mx-auto lg:w-2/4">
+        <div>
+
+            <div>
+                <label for="Email" class="block text-sm font-medium text-gray-700 pb-4">Email</label>
+                <div class="mt-1 relative pb-4">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    </div>
+                    <input type="email" name="email" formControlName="email"
+                        class="focus:ring-indigo-500 focus:border-indigo-500 w-full rounded-md border-gray-300  block shadow-sm  pl-7 pr-12 sm:text-sm"
+                        placeholder="jdoe@gmail.com">
+
+                </div>
+
+                <label for="Password" class="block text-sm font-medium text-gray-700 pb-4">Password</label>
+                <div class="mt-1 relative rounded-md shadow-sm pb-4">
+                    <input type="password" name="email" formControlName="password" placeholder="discombobulate"
+                        class="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 sm:text-sm border-gray-300 rounded-md">
+                </div>
+
+
+            </div>
+
+            <div class="flex justify-between">
+                <div class="py-3  text-right">
+                    <a href="#"
+                        class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        Back
+                </a>
+                </div>
+                <div class="py-3  text-right">
+                    <button (click)="login()"
+                        class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</div>
